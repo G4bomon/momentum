@@ -1,0 +1,146 @@
+@font-face {
+  font-family: blessing;
+  src: url(../fonts/Blessing.ttf);
+}
+
+@font-face {
+  font-family: rosehot;
+  src: url(../fonts/Rosehot.ttf);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Establece la altura mínima del body como el 100% de la altura visible del viewport */
+}
+
+header {
+  padding: 20px;
+  background-color: #32d4e633;
+  color: #fff;
+}
+
+header .arriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #5EC6D1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+}
+
+main {
+  flex: 1; /* Permite que el main ocupe todo el espacio disponible verticalmente */
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 10px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+article {
+  display: flex;
+  background-color: #32d4e633;
+  border: 2px solid #5cf4ff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: background-color 0.5s;
+}
+
+article h3 {
+  color: #110051;
+  padding: 5px;
+  font-family: rosehot;
+}
+
+h1, h2, h3 {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5EC6D1;
+  font-family: rosehot;
+}
+
+a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: rosehot;
+}
+
+
+article:hover {
+  background-color: #5cf4ff;
+}
+nav a:hover {
+  background-color: #5cf4ff;
+}
+
+footer {
+  background-color: #110051;
+  color: #5EC6D1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px;
+  font-family: rosehot;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción 16:9 para un contenedor responsive */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+#video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.porcentaje-color {
+  color: #110051; 
+  padding: 5px;
+}
+

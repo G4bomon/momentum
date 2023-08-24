@@ -1,0 +1,76 @@
+@font-face {
+  font-family: rosehot;
+  src: url(../fonts/Rosehot.ttf);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+img{
+  transition: width 1s, height 1s, top 1s, left 1s;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+}
+ 
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  z-index: -2;
+  cursor: pointer; /* Agregar un cursor de puntero para indicar que es clickeable */
+}
+.full {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 101vh;
+  width: 101vw;
+  z-index: 1;
+  object-position: center;
+  transform: translate(center);
+}
+
+h3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size:3rem;
+  text-align: center;
+  z-index: 2;
+  transition: 1s;
+  display: none;
+  font-family: rosehot;
+}
+
+p{
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem ;
+  font-family: rosehot;
+}
+
+.visible {
+  display: block;
+}
